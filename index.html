@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="./geek.png">
+</head>
+<style>
+    body{
+    background-color: #1da3c9;
+opacity: 0.8;
+background-image: radial-gradient(circle at center center, #1b4e61, #1da3c9), 
+repeating-radial-gradient(circle at center center, #1b4e61, #1b4e61, 34px, transparent 68px, transparent 34px);
+background-blend-mode: multiply;
+    }
+
+    .navbar{
+    
+        background-color:#f2f2f2;
+        overflow: hidden;
+
+    }
+    .navbar a{
+      height: 30px;
+        float: left;
+        color:#12121b ;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration:none;
+        font-size: 17px;
+        font-weight: bolder;
+   }
+   .navbar a:hover{
+    background-color:#1da3c9;
+    color: black;
+   }
+   .navbar a.active{
+    background-color:#123a49;
+    color:black;
+   }
+   .navbar input[type=text]{
+    background-color:#f2f2f2;
+    color:#12121b;
+    float:right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    border: #12121b;
+    font-size: 20px;
+    
+   }
+   .signin{
+    position: static;
+    float:right;
+    padding-top: 6px;
+    padding-bottom: 7px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 8px;
+    background-color: #1da3c9;
+    border-radius: 3px;
+   }
+   .signin:hover {
+  background-color:white;
+  color:#12121b;
+  border: 2px; solid: #123a49;
+}
+
+.signin:hover svg {
+  fill: #222;
+}
+
+
+   .div{
+  
+    font-size: larger;
+    font-weight:400;
+   }
+   .div p{
+    color: #f2f2f2;
+    font-weight: strong;
+    font-family:"Gill Sans", sans-serif;
+    
+   }
+   .div h1{
+    color:#f2f2f2;
+    font-weight:bolder;
+    font-size:xx-large;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   }
+   .div img{
+    display: flex;
+    position: absolute;
+    height: 100mvh; 
+    right: 10px;
+    top: 10px;
+    width: fit-content;
+    margin-top: 100px;
+    margin-bottom: 140px;
+    margin-right: 40px;
+    width: 250px;
+    height: 350;
+    border: 2px;
+    border-color:#f2f2f2;
+    border-radius: 8px;
+   }
+
+    
+   .button{
+    background-color: #1da3c9;
+    color:white;
+    font-weight: 600;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  line-height: 2rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  margin-right: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  border: none;
+  margin-top: 20px;
+   }
+   .button:hover {
+  background-color:white;
+  color:#12121b;
+ 
+}
+
+.button:hover svg {
+  fill: #222;
+}
+
+
+
+
+.section2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+height: 100vh;
+align-items: flex-start;
+
+}
+.box1 {
+  justify-items: auto;
+  background-color:#f2f2f2;
+  width: 310px;
+  border: 1px solid #ffffff;
+ padding: 80px;
+ margin: 1px;
+ margin-top: 40px;
+position:static;
+border-radius: 10px;
+}
+  .course{
+    margin-bottom: 15px;
+    padding: 2px;
+  }
+
+
+ .course h1{
+  font-size: 60px;
+  color:#f2f2f2;
+    font-weight:bolder;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+ .course p{
+  font-size: 20px;
+    color: #f2f2f2;
+    font-weight: strong;
+    font-family:"Gill Sans", sans-serif;
+    
+   }
+ 
+
+ 
+.navbar2{
+        background-color:#f2f2f2;
+        overflow: hidden;
+
+    }
+    .navbar2 a{
+        float: left;
+        color:#12121b ;
+        text-align: center;
+        padding: 40px;
+        text-decoration: none;
+        font-size: 17px;
+        font-weight: bolder;
+      
+   }
+   .navbar2 a:hover{
+    background-color:#1da3c9;
+    color: black;
+   }
+   .navbar2 a:checked{
+    background-color:#123a49;
+    color:black;
+   }
+.container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+           
+           
+        }
+
+        
+        .box-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            align-items: flex-start;
+            border-radius: 10px;
+            margin: auto;
+
+          
+        }
+
+        .box {
+            background-color: #fff;
+            border-radius: 10px;
+            border-radius: 2px;
+            padding: 20px;
+            text-align: center;
+            width: 200px;
+            width: calc(20% - 15px); 
+            margin: auto;
+
+        }
+
+        .box img {
+            max-width: 100%;
+        }
+
+ .div3{
+  display: flex;
+   background-color: hsl(196, 56%, 24%);
+   align-items:center;
+  text-align: left;
+  padding: 50px;
+
+ }
+ .div3 p{
+  padding-left: 600px;
+  color: #f2f2f2;
+  font-weight: bold;
+  font-family:"Gill Sans", sans-serif;
+  
+ }
+ .div3 h1{
+  padding-left: 600px;
+  color:#f2f2f2;
+  font-weight:bolder;
+  font-size:xx-large;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+ .div3 img{
+  height: 250px;
+  border: 2px solid #1da3c9;
+  border-radius: 8px;
+ }
+ .div3 button {
+  background-color: #1da3c9;
+    color:white;
+    font-weight: 600;
+  border-radius: 0.5rem;
+  margin-left: 600px;
+  font-size: 1rem;
+  line-height: 2rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  margin-right: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  border: none;
+  margin-top: 20px;
+ }
+ 
+ .div3 button:hover {
+  background-color:white;
+  color:#12121b;
+ 
+}
+
+.div3 button:hover svg {
+  fill: #222;
+}
+
+.div4{
+  display: flex;
+   align-items:center;
+  text-align: left;
+  padding: 50px;
+  border-radius: 8px;
+
+ }
+ .div4 p{
+  padding-left: 60px;
+  color: #f2f2f2;
+  font-weight: bold;
+  font-family:"Gill Sans", sans-serif;
+  
+ }
+ .div4 h1{
+  padding-left: 60px;
+  color:#f2f2f2;
+  font-weight:bolder;
+  font-size:xx-large;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+ .div5 {
+  justify-items: auto;
+  background-color:white;
+  width: 330px;
+  border: 1px solid #ffffff;
+ padding: 80px;
+ margin: auto;
+position:static;
+display: inline-block;
+border-radius: 10px;
+
+.center {
+  text-align: center;
+}
+
+ }
+ .lastone{
+  background-color: white;
+  display:flex;
+  align-items: center;
+  text-align: center;
+  margin-top:30px;
+  padding-left: 530px;
+ }
+
+
+
+
+
+
+
+
+   </style>
+<body class="color5">
+   <div class="navbar">
+    <a class="active" href="#">home</a>
+    <a href="#">News</a>
+    <a href="#">contact</a>
+    <a href="#">about</a>
+  
+    <input type="text" placeholder="search..">
+    <button class="signin">sign up</button>
+    <button class="signin">sign in</button>
+   
+   </div>
+   <section class="section">
+    <div class="div">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam odio non sim</p>
+        <h1>Grow your skill and <br>
+            advance your <br>
+            career</h1>
+            <img src="./IMG-20230701-WA0139.jpg" alt="MY PICTURE">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+        Blanditiis, aspernatur voluptatibus amet omnis ipsa ipsum ex itaque eveniet neque<br>
+        voluptatum beatae repellat corrupti fugiat facere nemo eos magnam? Repudiandae, tempora.<br>
+         Magnam, sequi. Obcaecati ab distinctio in id voluptas tempore aut molestias officiis voluptate<br>
+         earum optio dolor, enim velit vitae rerum porro ratione! Aliquam excepturi deleniti inventore <br>
+         illo dignissimos qui quos.Pariatur et iciis odit odio porro deleniti <br>
+         tempore quaerat ea ad ratione?</p>
+        <button class="button">JOIN NOW</button>
+        <button class="button">WATCH VIDEO</button>
+
+        
+    </div>
+   </section>
+<section class="section2">
+    <div class="box1">
+      <i class="fa fa-user"></i>
+      <h2>instructor</h2>
+      
+        
+    
+   </div>
+   <div class="box1">
+    <h2>
+        course inrollemneat
+    </h2>
+   </div>
+   <div class="box1">
+    <h2>course 42 languages</h2>
+   </div>
+   <div class="box1">
+    <h2>online videos</h2>
+
+   </div>
+ 
+</section>
+
+  <div class="course">
+   <h1>Most Popular courses</h1>
+   <p>the most Popular courses in the world in 2023</p>
+  </div>
+ 
+<div class="navbar2">
+  <a href="#">development</a>
+  <a href="#">design</a>
+  <a href="#">Marketing</a>
+  <a href="#">Health</a>
+  <a href="#">bussinuess</a>
+  <a href="#">about</a>
+  </div>
+<section class="container">
+
+  <div class="box-container">
+
+    <div class="box">
+      <img src="./angular.png" alt="">
+      <p>angular</p>
+           
+    </div>
+
+    <div class="box">
+        <img src="./angular.png" alt="">
+        <p>angular</p>
+    </div>
+
+    <div class="box">
+        <img src="./angular.png" alt="">
+        <p>angular</p>
+    </div>
+
+    <div class="box">
+        <img src="./angular.png" alt="">
+        <p>angular</p>
+    </div>
+
+    <div class="box">
+        <img src="./wordpress.jpg" alt="">
+        <p>wordpress</p>
+    </div>
+
+    <div class="box">
+        <img src="./wordpress.jpg" alt="">
+        <p>wordpress</p>
+    </div>
+    <div class="box">
+      <img src="./wordpress.jpg" alt="">
+      <p>wordpress</p>
+  </div>
+  <div class="box">
+    <img src="./wordpress.jpg" alt="">
+    <p>wordpress </p>
+</div>
+
+</div>
+
+
+
+</section>
+<section>
+  <div class="div3">
+  
+    <div><img src="./IMG-20230701-WA0139.jpg" alt="picture"></div>
+    <div>
+      <h1>Become in instructor today</h1>
+    <p>Lorem ipsum dolor sit amet consectetur,<br>int atque facere, sapiente dicta aliquid tempora tota<br> atque facere, sapiente dicta aliquid tempora facilis</p>
+    <button>start teaching today</button>
+  </div>
+</div>
+
+</section>
+<section>
+  <div class="div4">
+    <div>
+      <h1>What our costumers say</h1>
+    <p>Lorem ipsum dolor sit amet consectetur,<br>int atque facere, sapiente dicta aliquid tempora tota<br> atque facere, sapiente dicta aliquid tempora facilis</p>
+    <button class="button" style="margin-left: 1000px;">View Review</button></div>
+  </div>
+</section>
+  <section>
+    <div>
+  <div class="div5">
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br>
+       Aliquam expedita, libero, pariatur id doloribus impedit ipsum <br>
+       rem, maxime deleniti optio consequuntur et asperiores! <br>
+       Impedit fugit assumenda dignissimos non quaerat nulla.</p>
+       <h2 class="center">Ahmad</h2>
+       <h4 class="center">web developer</h4>
+</div>
+<div class="div5">
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br>
+    Aliquam expedita, libero, pariatur id doloribus impedit ipsum <br>
+    rem, maxime deleniti optio consequuntur et asperiores! <br>
+    Impedit fugit assumenda dignissimos non quaerat nulla.</p>
+    <h2 class="center">Ahmad</h2>
+    <h4 class="center">web developer</h4>
+</div>
+<div class="div5">
+
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br>
+  Aliquam expedita, libero, pariatur id doloribus impedit ipsum <br>
+  rem, maxime deleniti optio consequuntur et asperiores! <br>
+  Impedit fugit assumenda dignissimos non quaerat nulla.</p>
+  <h2 class="center">Ahmad</h2>
+  <h4 class="center">web developer</h4>
+</div>
+</div>
+
+</section>
+<section class="lastone">
+  <div>
+  <h2>About Us</h2>
+  <p>We are only try to make you a good computer programer.</p>
+
+
+  <h1>Contact Us</h1>
+  <p>If you have any questions, please email us.</p>
+   midrees14612@gmail.com
+</div>
+</section>
+</body>
+</html>
